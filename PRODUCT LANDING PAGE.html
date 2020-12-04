@@ -1,0 +1,357 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+
+body {
+  font-family: 'nunito';
+  color: white;
+  background-color: rgb(255, 255, 255);
+  line-height: 1.4;
+  width: 100%;
+  font-size: 1vw;
+}
+
+#background {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1;
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+}
+
+h1 {
+  font-size: 1.4vw;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  font-size: 2vw;
+  color:rgb(255, 255, 255);
+}
+
+h3 {
+  font-size: 3vw;
+  color: rgb(255, 255, 255);
+}
+h4{
+    font-size: 2vw;
+  color:rgb(254, 254, 255); 
+}
+
+
+
+a {
+  color:rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:hover{ 
+  text-decoration: underline;
+  filter: brightness(150%);
+  filter: drop-shadow(8px 8px 10px white);
+}
+
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 19px;
+  padding: 25px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  z-index:5;
+}
+
+#shop {
+  margin-left: 13%;
+  margin-top: -30%;
+  display: flex; 
+  justify-content: space-between;
+  width: 75%;
+  left:0px;
+}
+
+
+#portfolio {
+  margin-left: 27%;
+  margin-top: 45%;
+  display: flex; 
+  justify-content: space-between;
+  width: 50%;
+}
+
+
+#laptop-icon:hover {
+  filter: brightness(150%);
+  filter: drop-shadow(8px 8px 10px white);
+}
+
+
+#header_a:hover {
+  filter: brightness(150%);
+  filter: drop-shadow(8px 8px 10px white);
+}
+
+#mystory {
+  margin-left: 0;
+  margin-top: 20%;
+  display: flex; 
+  justify-content: space-between;
+  width: 100%;
+  left:auto;
+}
+
+#storylayover {
+  background-color: rgb(81, 83, 83);
+  width: 100%;
+  opacity: 0.9;
+  
+}
+    
+
+.submit { 
+  display: block; 
+  width: 51.5%;
+  height: 3vw;
+  margin-top: 0vw;
+  margin-bottom: 1vw;
+  font-size: 1.5vw;
+  
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  
+  background: #0a0a0a;
+  box-shadow:  0 0 5px #fdffff,  0 0 8px #000000;
+  padding: 0;
+  border: none;
+  z-index: 2;
+  -webkit-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+
+.submit:hover{
+  background-color: transparent;
+  color: #feffff;
+  box-shadow: 0 5px 3px -3px #ffffff, 0 -5px 3px -3px #000000,
+    0 5px 3px -3px #ffffff, 0 -5px 3px -3px #000000;
+}
+
+  .email {
+    display: block; 
+    width: 50%;
+    height: 2rem;
+    padding: 0.25rem 0.75rem;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+
+  .text {
+    display: block; 
+    width: 50%;
+    height: 2rem;
+    padding: 0.25rem 0.75rem;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+
+
+@media only screen and (max-width: 800px){
+  body {
+  flex-wrap: wrap;
+  }
+  
+  #header-img {
+  width: 30vw;
+  }
+  
+  .nav-link {
+  font-size: 2.5vw; 
+  }
+
+  #video {
+   width: 250px;
+   height: auto; 
+  }
+  
+  
+  .submit {
+    width: 20%;
+    padding: 0.75rem;
+    background: royalblue;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .email {
+    display: block; 
+    width: 18.5%;
+    height: 2rem;
+    padding: 0.25rem 0.75rem;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+
+  .text {
+    display: block; 
+    width: 18.5%;
+    height: 2rem;
+    padding: 0.25rem 0.75rem;
+    background-color: rgb(59, 161, 192);
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+}
+
+</style>
+<div id="background">
+    <img src="/newbackground.jpg" class="stretch" alt="background" height="100%" />
+</div>
+
+
+  <header id="header">
+    
+  <img 
+       src="/LOGO.jpg" 
+       alt="logo" 
+       border="0" 
+       id="header-img"
+       width="300px";
+       >
+   
+  <nav id="nav-bar">
+
+      <a  class="nav-link" href="#shop"> Shop </a> &nbsp; &nbsp; &nbsp;
+      
+      <a class="nav-link" href="#portfolio"> Portfolio </a> &nbsp; &nbsp; &nbsp;
+      
+      <a class="nav-link" href="#mystory"> My Story </a> &nbsp; &nbsp; 
+
+              
+  </nav>
+ </header>
+
+
+<body>
+
+  <div id="shop-text" style="width: 100%; height: auto; overflow: hidden">
+    
+  <img src="/NIGHT SKY.jpg" alt="shop-wallpaper" width= "100%" left:0px;>
+    
+    </div>
+  
+    <section id="shop">
+    <a id="shop-head" target="_blank" href="https://github.com/Dannysyre"> 
+      <h2> Finance </h2> </a>
+      
+    <a id="shop-head" target="_blank" href="https://github.com/Dannysyre"> 
+    <h4> Web Development </h4></a>
+      
+    <a id="shop-head" target="_blank" href="https://github.com/Dannysyre"> 
+    <h2> Graphics Design </h2></a>
+    
+  </section>
+
+  
+
+  
+  
+  <section id="portfolio">
+    
+
+    <div id="laptop-icon" align="center" style="width: 100%; height: auto; overflow: hidden">
+<br>
+<br> 
+<br>
+<br> 
+<br>
+<br> 
+<br>
+<br> 
+   <a id="github" target="_blank" href="https://github.com/Dannysyre"> 
+    <img src="/laptop icon.png" 
+    alt="laptop-icon" width= "10%";>
+   </a>
+      
+    <h2> Software Projects </h2> 
+   <p> See my projects on github.com/Dannysyre</p>
+    </div>
+    
+  </section>
+
+  
+
+ <section id="mystory">
+   <div id="storylayover" align="left" style="width: 100%; overflow: hidden">
+ 
+    
+     <iframe 
+             id="video" 
+             align="right"
+             width="560" 
+             height="315" 
+             src= "https://www.youtube.com/embed/MIjH8MCbONI"
+             frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+             allowfullscreen>
+     </iframe>
+        <h3> My name is Daniel  </h3>
+       
+     <h2> <i> Economist, Graphics Designer and Web Developer </i> <h2>
+   
+   </div>
+  </section>
+ 
+</body>
+
+<footer>
+<div id="storylayover" align="left" style="width: 100%; overflow: hidden">
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input 
+             id="text" 
+             type="text" 
+             name="text" 
+             placeholder="Have a question?" 
+             class="text" 
+             required> 
+      </input>
+<br>
+  <input 
+             id="email" 
+             type="email" 
+             name="email" 
+             placeholder="Email" 
+             class="email" 
+             required> 
+      </input>
+  <br>
+      <input 
+             id="submit" 
+             type="submit" 
+             value="Ask" 
+             class="submit">
+       </input>
+  </form>
+</div>  
+  
+</footer>
+
+
